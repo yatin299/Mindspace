@@ -1,0 +1,21 @@
+# This is my take on rock paper scissors game
+# Next iteration will be on invalidity and simplifying the code a little more
+# 3rd iteration would be on looping it , a scoreboard and maybe also choosing to go for an another round , best of 3 , 5 etc
+
+import random
+print("ROCK PAPER SCISSORS GAME")
+choices = ["ROCK", "PAPER" ,"SCISSORS"]
+player_choice = input(("Your Choice: ")).upper()
+com_choice = random.choice(choices)
+print(f"You chose: {player_choice.upper()}")
+print(f"Computer chose: {com_choice}")
+if player_choice == "ROCK" and com_choice == "SCISSORS" :
+    print("YOU WIN")
+elif player_choice == "SCISSORS" and com_choice == "PAPER" :
+    print("YOU WIN")
+elif player_choice == "PAPER" and com_choice == "ROCK" :
+    print("YOU WIN")
+elif player_choice == com_choice  :
+    print("IT'S A DRAW\nPlease go Again")
+else:
+    print("YOU LOSE")
