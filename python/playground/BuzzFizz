@@ -1,0 +1,16 @@
+# add a timer 
+# start of with a random no
+# point system
+# redefine buzzfizz words for each iteration of the round with user input maybe or random words from pre defined ones from our data
+# and something that comes up as I go
+
+# primary logic/bare bones logic
+for x in range(1,101):
+    if x % 3 ==0 and x % 5 == 0:
+        print("FizzBuzz")
+    elif x % 3 == 0:
+        print("Fizz")
+    elif x % 5 == 0:
+        print("Buzz")
+    else:
+        print(x)
